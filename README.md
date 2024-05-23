@@ -16,16 +16,3 @@ JWT_SECRET=your_jwt_secret
 #### Start the server:
 
 node server.js
-Frontend (Optional)
-
-#### Navigate to the frontend directory:
-
-cd ../frontend
-
-#### Install dependencies:
-e
-npm install
-
-#### Start the React application:
-
-npm start
