@@ -18,8 +18,6 @@ router.post('/login', async (req, res) => {
   if (!user || !await bcrypt.compare(password, user.password)) {
     return res.status(401).send('Invalid credentials');
   }
-  const token = jwt.sign({ userId: user._id }, 'secretkey');
-  res.send({ token });
 });
 
 module.exports = router;
